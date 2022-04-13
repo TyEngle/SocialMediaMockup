@@ -1,21 +1,32 @@
+import logo from './logo.svg';
 import './App.css';
-import Home from './Home';
-import Notifs from './Notifs';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import Profile from "./Components/Profile";
+import Notifs from "./Components/Notifs";
+import Message from "./Components/Message";
+import Home from "./Components/Home";
+import Login from "./Components/Login";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router> 
     <div>
-      <h1>Broooooo</h1>
-      <hr />
+      <h1>Website!!</h1>
+
+
     </div>
-      <Link to='/'>Home</Link>
-      <Link to='/Notifs'>Notifs</Link>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Notifs" element={<Notifs />} />
-      </Routes>
+    <Link to="/Notifs">Notifs</Link> <br />
+    <Link to="/Message">Message</Link> <br />
+    <Link to="/Profile">Profile</Link> <br />
+    <Link to="/Home">Home</Link> <br />
+    <Link to="/Login">Login</Link> <br />
+    <Routes> 
+      <Route path="/Profile" element={<Profile />} />
+      <Route path="/Notifs" element={<Notifs />} />
+      <Route path="/Message" element={<Message />} />
+      <Route path="/Home" element={<Home />} />
+      <Route path="/Login" element={<Login />} />
+    </Routes>
     </Router>
   );
 }
