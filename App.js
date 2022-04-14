@@ -6,6 +6,7 @@ import Message from "./Components/Message";
 import Home from "./Components/Home";
 import Login from "./Components/Login";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { FaHome, FaBell, FaEnvelope, FaUser, FaCog, FaBookmark, FaEllipsisH } from 'react-icons/fa'
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
 
 
     </div>
-    <Link to="/Notifs">Notifs</Link> <br />
-    <Link to="/Message">Message</Link> <br />
-    <Link to="/Profile">Profile</Link> <br />
-    <Link to="/Home">Home</Link> <br />
+    <Link to="/Home">Home</Link> <FaHome /> <br />
+    <Link to="/Notifs">Notification</Link> <FaBell /> <br />
+    <Link to="/Message">Messages</Link>  <FaEnvelope />  <br />
+    <Link to="/Profile">Profile</Link> <FaUser /> <br />
     <Link to="/Login">Login</Link> <br />
     <Routes> 
       <Route path="/Profile" element={<Profile />} />
