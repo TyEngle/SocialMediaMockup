@@ -79,3 +79,19 @@
   
     background: #d64d4d;
   }
+
+ #Text2 {
+    position: absolute;
+  
+    width: 434px;
+  
+    height: 1080px;
+  
+    left: 300px;
+
+    right: 400px;
+  
+    top: 200px;
+  
+    background: #d64d4d;
+  }
