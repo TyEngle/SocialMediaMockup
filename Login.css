@@ -1,3 +1,66 @@
+// Styling for login screen
+
+.SignInBox {
+  position: absolute;
+  height: 50vh;
+  width: 70vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 63%, 57%, 0.6);
+  border-radius: 5px;
+  color: white;
+}
+
+.SignInForm {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 30% min-content min-content min-content;
+  grid-template-areas:
+    "header header"
+    "username_label username_input"
+    "password_label password_input"
+    "submit_button submit_button";
+}
+
+.SignInForm > h1 {
+  grid-area: header;
+  margin: 10px;
+}
+
+.SignInForm > label[for="username"] {
+  grid-area: username_label;
+  margin: 10px;
+}
+
+.SignInForm > label[for="password"] {
+  grid-area: password_label;
+  margin: 10px;
+}
+
+.SignInForm > input[name="username"] {
+  grid-area: username_input;
+  width: 80%;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.SignInForm > input[name="password"] {
+  grid-area: password_input;
+  width: 80%;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.SignInForm > button {
+  grid-area: submit_button;
+  border-radius: 5px;
+
+
 //css positioning router texts to the center
 
 #myhead {
